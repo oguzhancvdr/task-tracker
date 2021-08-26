@@ -17,4 +17,4 @@ export const initialState = [
       day: "Feb 7th at 20:00pm",
       isDone: false,
     },
-  ];
+];
