@@ -1,12 +1,11 @@
-import { useState } from "react";
-import { initialState } from "../store/initialStates";
+import { Task } from "./Task";
 
-export default function Tasks() {
-  const [tasks, setTasks] = useState(initialState);
+export default function Tasks({tasks}) {
+  
   return (
     <div>
       {tasks.map((task) => (
-        <h3 key={task.id}>{task.text}</h3>
+        <Task key={task.id} task={task} />
       ))}
     </div>
   );
