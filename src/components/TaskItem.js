@@ -1,6 +1,6 @@
 import { FaTimes } from "react-icons/fa";
 
-export const Task = ({ task, onDelete }) => {
+export const TaskItem = ({ task, onDelete }) => {
   return (
     <div className={"task"}>
       <h3>
